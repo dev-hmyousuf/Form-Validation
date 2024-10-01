@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফর্ম ভ্যালিডেশন</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    >
+</head>
+<body>
+  <div class="container">
+    <form id="form">
+      <i class="fas fa-memo-pad"></i>
+
+      <div class="input-group">
+        <label>সম্পূর্ণ নাম</label>
+        <input type="text" placeholder="আপনার নামটি লিখুন" id="nameInput" name="name" onkeyup="validateName()">
+        <span id="nameError"></span>
+      </div>
+
+      <div class="input-group">
+        <label>ফোন নাম্বার</label>
+        <input type="number" placeholder="০১২ ৩৪৫৬ ৭৮৯" id="numberInput" name="Number" onkeyup="validateNumber()">
+        <span id="numberError"></span>
+      </div>
+
+      <div class="input-group">
+        <label>ইমেইল আইডি</label>
+        <input type="email" placeholder="ইমেইল লিখুন" id="emailInput" name="email" onkeyup="validateEmail()">
+        <span id="emailError"></span>
+      </div>
+
+      <div class="input-group">
+        <label>আপনার বার্তা</label>
+        <textarea rows="5" placeholder="আপনার বার্তা লিখুন" name="message" id="messageInput" onkeyup="validateMessage()"></textarea>
+        <span id="messageError"></span>
+        <span id="remain"></span>
+      </div>
+
+      <button type="submit">জমা দিন</button>
+      <span id="submitError"></span>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
