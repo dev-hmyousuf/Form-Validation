@@ -11,33 +11,58 @@
 </head>
 <body>
   <div class="container">
+    <div class="submitted">
+      <div class="hSubmmited">
+        <i class="fas fa-check-circle"></i>
+        <h2>Form IS Submitted</h2>
+      </div>
+      <div class="hSubmmited2">
+      <div id="SubmittedName"></div>
+      <div id="SubmittedNumber"></div>
+      <div id="SubmittedEmail"></div>
+      <div id="SubmittedMessage"></div>
+      </div>
+    </div>
     <form id="form">
       <i class="fas fa-memo-pad"></i>
 
       <div class="input-group">
-        <label>সম্পূর্ণ নাম</label>
-        <input type="text" placeholder="আপনার নামটি লিখুন" id="nameInput" name="name" onkeyup="validateName()">
-        <span id="nameError"></span>
+        <label>সম্পূর্ণ নাম : </label>
+        <div class="label2">
+          <input type="text" placeholder="আপনার নামটি লিখুন" id="nameInput" name="name" onkeyup="validateName()">
+          <span id="nameError"></span>
+        </div>
+        <div id="nameValid" class="validity"></div>
       </div>
-
+      
       <div class="input-group">
-        <label>ফোন নাম্বার</label>
-        <input type="number" placeholder="০১২ ৩৪৫৬ ৭৮৯" id="numberInput" name="Number" onkeyup="validateNumber()">
-        <span id="numberError"></span>
+        <label>ফোন নাম্বার : </label>
+        <div class="label2">
+          <input type="number" placeholder="০১২ ৩৪৫৬ ৭৮৯" id="numberInput" name="Number" onkeyup="validateNumber()">
+          <span id="numberError"></span>
+        </div>
+        <div id="numberValid" class="validity"></div>
       </div>
-
+      
       <div class="input-group">
-        <label>ইমেইল আইডি</label>
-        <input type="email" placeholder="ইমেইল লিখুন" id="emailInput" name="email" onkeyup="validateEmail()">
-        <span id="emailError"></span>
+        <label>ইমেইল আইডি : </label>
+        <div class="label2">
+          <input type="email" placeholder="ইমেইল লিখুন" id="emailInput" name="email" onkeyup="validateEmail()">
+          <span id="emailError"></span>
+        </div>
+        <div id="emailValid" class="validity"></div>
       </div>
-
+      
       <div class="input-group">
-        <label>আপনার বার্তা</label>
-        <textarea rows="5" placeholder="আপনার বার্তা লিখুন" name="message" id="messageInput" onkeyup="validateMessage()"></textarea>
-        <span id="messageError"></span>
-        <span id="remain"></span>
+        <label>আপনার বার্তা : </label>
+        <div class="label2">
+          <textarea rows="5" placeholder="আপনার বার্তা লিখুন" name="message" id="messageInput" onkeyup="validateMessage()"></textarea>
+          <span id="messageError"></span>
+          <span id="remain"></span>
+        </div>
+        <div id="messageValid" class="validity"></div>
       </div>
+      
 
       <button type="submit">জমা দিন</button>
       <span id="submitError"></span>

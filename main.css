@@ -17,6 +17,7 @@
     background: #141a34;
     display: flex;
     align-items: center;
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -48,10 +49,11 @@
     display: flex;
     align-items: center;
     margin: 10px 0;
-    position: relative;
+    justify-content: space-around;
 }
 .input-group label{
     flex-basis: 28%;
+    font-size: large;
 }
 .input-group input, .input-group textarea{
     flex-basis: 68%;
@@ -82,13 +84,10 @@ form button{
 
 .input-group span {
     color: red;
-    position: absolute;
-    bottom: 0.7rem;
     font-size:0.8rem ;
-    right: 1rem;
 }
 .input-group span i {
-    color : green;
+    color : rgb(103, 204, 103);
 }
 #submitError 
 {
@@ -106,4 +105,33 @@ textarea {
 }
 #submitError {
     text-align: center;
+}
+.submitted{
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius:1rem ;
+    display:none ;
+    z-index: 9999;
+}
+.hSubmmited {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hSubmmited2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.label2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.fas {
+    color: green;
 }
