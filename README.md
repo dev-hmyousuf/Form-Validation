@@ -12,7 +12,7 @@ This project is a simple **form validation** example with a responsive design. I
 
 ## Technologies Used
 - HTML5
-- CSS3 (with **Tailwind-like** utility classes for layout)
+- CSS3 
 - JavaScript for validation
 
 ## Installation
@@ -20,5 +20,5 @@ To run this project on your local machine, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/form-validation-bangla.git
-   cd form-validation-bangla
+   git clone https://github.com/dev-hmyousuf/Form-Validation.git
+   cd Form-Validation
